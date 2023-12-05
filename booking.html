@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Restaurant Table Booking</title>
+  <style>
+    body {
+    
+      background-image: url(loginfront.jpg);
+      background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    }
+
+    .booking-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 50px;
+    }
+
+    .booking-form {
+      width: 60%;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+
+<div class="container  booking-container">
+  
+
+ 
+  <div class="col-md-6 booking-form">
+    <h2 class="mb-4"style="color:white;font-weight:bold">Table Booking</h2>
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name"style="color:white;">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" style="color:white;">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                  </div>
+            </div>
+        </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="date" style="color:white;">Date:</label>
+                <input type="date" class="form-control" id="date" name="date" placeholder="choose your date" required>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="time" style="color:white;">Time:</label>
+                <input type="time" class="form-control" id="time" name="time"placeholder="Select your Timings" required>
+              </div>
+        </div>
+      </div>
+     
+      
+      <div class="form-group">
+        <label for="people"style="color:white;">Number of People:</label>
+        <select class="form-control" id="people" name="people" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5</option>
+          <option value="4">6</option>
+         
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="specialRequest"style="color:white;">Special Requests:</label>
+        <textarea class="form-control" id="specialRequest" name="specialRequest" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Book Now</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
